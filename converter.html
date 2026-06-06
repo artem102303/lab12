@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Конвертер валют</title>
+
+<style>
+body {
+  font-family: Arial;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+  <h2>Конвертер валют</h2>
+
+  <input type="number" id="amount">
+
+  <select id="from"></select>
+  <select id="to"></select>
+
+  <h3 id="result">0</h3>
+</div>
+
+<script src="converter.js"></script>
+
+</body>
+</html>
